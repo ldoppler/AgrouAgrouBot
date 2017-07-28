@@ -1,0 +1,79 @@
+Général:
+    - résurection?
+    - Pacte avec le diable (villageois la prochaine partie)?
+    - inversion des rôles?
+
+
+Rôles: (-> checker autre bot)
+[x] Loup-garou
+[x] Cupidon
+[x] Voyante
+[x] Fou (crois ^etre la voyante mais nope)
+[x] Chasseur (mort -> pew pew)
+[x] Joaillier
+[x] Tanneur/dépressif/suicidaire/Emo
+[x] Doppelganger/copycat
+[x] Maladroit
+[x] Juge (peut déclencher un double vote à une occasion)
+[x] Villageois
+[x] Sorcière (classique)
+[x] Maudit (morsure ->loup)
+[x] Enfant sauvage (si modèle meurt -> devient loup)
+[x] Ange gardien (protège chaque nuit un joueur)
+[x] Idiot du village/Prince
+
+[o] Ancien (survit les loups, si tué au vote -> perte pouvoir village)
+[o] Loup-alpha
+[o] Bouc-émissaire (égalité=RIP, choisit qui peut voter au prochain tour)
+[o] Chien-loup -> a le choix en début de partie s'il veut être loup ou chien (wouf wouf si un des accusés du jour est loup)
+[o] L'inquisiteur (peut tuer une seule fois, but: RIP voyante & sorcière)
+
+[ ] Grand méchant loup? (tant que aucun loup mort -> tue 2 personnes)
+[ ] Loup-garou blanc?
+[ ] Voyante sombre? (offuscer le role des loups qui meurent, double victime une seule fois)
+[ ] Sectaires (chef de secte + adeptes convertis)
+[ ] Serial murder?
+[ ] spectre -> les loups le choississent et il devient loup mais tue un loup
+[ ] frères & soeurs -> maçons... bof bof
+
+
+Mode de jeu:
+    - 50% de chances ques les votes soient aléatoires
+    - Vote masqués
+    - Graffitis -> indices anonymes
+    - Peste noire
+    - voyante somnabule (résultat annoncé à tous mais on sait pas qui)
+    - gracié sur vote? (nb random 1 à 5-10)
+    - victimes des loups s'évanouit met meurt pas mais perd ses pouvoirs
+    - 2 votes pour qui on aime -> celui avec le moins meurt
+    - enterrements -> on connait pas le rôle des vicitmes
+    - pouvoirs aléatoires
+
+
+To do features:
+    o Logs
+    o Statistiques (http://stackoverflow.com/questions/372885/how-do-i-connect-to-a-mysql-database-in-python)
+    o Paramétrages
+    - time.sleep(1 ou 2) entre étape pour compenser le temps de travel des messages
+    - /ping -> étape du jeu -> enjoliver le retour sur les étapes de jeu
+    - Catch all -> sendMessage(Une erreur est subvenue, à voir comment je survis sinon /kill ou /reboot)
+    - revoir messages pour la narration
+    - alléger les gifs (à <1Mb)
+    - gif pour l'annonce des amoureux
+    - LG: changer dâvis -> noncd bots
+
+
+Bugs:    
+    - Bug si uniquement deux bots en vie (LG et Joaillier)? Lié à celui du dessus? Ou par réinitialisation de la poussière
+
+Tests:
+    - copycat & enfant sauvage
+    - sendPhoto de l'ange si protégé au protégé & (info pour les loups)
+    - Victoire Emo
+    - Victoire amoureux
+
+
+Links:
+    - https://pypi.python.org/pypi/MySQL-python
+    - https://dev.mysql.com/doc/connector-python/en/connector-python-example-connecting.html
+    - http://stackoverflow.com/questions/372885/how-do-i-connect-to-a-mysql-database-in-python
