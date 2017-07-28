@@ -118,7 +118,7 @@ def on_chat_message(msg):
             bot.sendMessage(chat_id, '%s - Cycle n°%d'%(game.moment, game.day))
     
     elif command == '/reboot' or command == '/reboot@AgrouAgrouBot':
-        if user_id==40831342:
+        if user_id==0000000000:
             bot.sendMessage(chat_id, "Restarting...")
             time.sleep(2)
             bot.sendMessage(chat_id, "Done!")
