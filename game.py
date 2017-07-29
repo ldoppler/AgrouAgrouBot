@@ -9,7 +9,6 @@ import traceback
 from persos import *
 from telepot.namedtuple import InlineKeyboardMarkup, InlineKeyboardButton
 
-
 class Game:
     'A game of werewolf'
     VOTE_TIME=20
