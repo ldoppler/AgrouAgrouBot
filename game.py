@@ -51,7 +51,7 @@ class Game:
     def nb_bots(self):
         return len(self.alive_bots)
 
-    # Finishes a game (game interruption, neither a win nor a lose)
+    # Finishes a game (game interruption, neither a win nor a loss)
     def kill(self):
         self.cleanUp("Partie interrompue...")
         for p in self.alive_players:
