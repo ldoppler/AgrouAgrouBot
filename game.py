@@ -10,7 +10,7 @@ from persos import *
 from telepot.namedtuple import InlineKeyboardMarkup, InlineKeyboardButton
 
 class Game:
-    'A game of werewolf'
+    """A game of werewolf"""
     VOTE_TIME=20
     def __init__(self, bot, chat_id, player_id, name):
         self.launched=False
@@ -37,7 +37,8 @@ class Game:
         self.delayvote=False
         self.NOMS_BOTS=['Albert','Bob','Hervé','Jean','Marie','André','Pierre','Bernard','Lucie','René','Jeannine','Marcel','Robert','Claude','Denise','Yvette','Paulette','Monique','Simone','Audette','Paul','Thérèse','Lucien','Colette','Huguette','Marguerite']
         self.bot.sendMessage(player_id, "Tu as rejoint la partie")
-        
+
+    # Get the name from a player ID
     def name_of(self, ofid):
         for p in self.alive_players+self.alive_bots:
             if p.id == ofid:
@@ -49,6 +50,7 @@ class Game:
     def nb_bots(self):
         return len(self.alive_bots)
 
+    # Finishes a game (game interruption, neither a win nor a lose)
     def kill(self):
         self.cleanUp("Partie interrompue...")
         for p in self.alive_players:
