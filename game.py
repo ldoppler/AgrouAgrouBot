@@ -32,6 +32,7 @@ class Game:
         self.noAttack=False
         self.doubleVote=False
         self.moment=None
+        # moment is used to know in which part of the game the bot is (night, day, vote,...)
         self.voteM=None
         self.bot_ids=[]
         self.delayvote=False
